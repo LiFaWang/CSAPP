@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout   xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="2">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:background="@drawable/logo"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <include layout="@layout/underline_black"></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="手机号:"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/etPhoneNum"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <include layout="@layout/underline_black"></include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="密　码:"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <include layout="@layout/underline_black"></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:background="@color/colorLogin"
+                android:text="登陆"
+                android:onClick="login"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorLogin"
+                    android:layout_height="wrap_content"
+                    android:text="注册账号"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorLogin"
+                    android:layout_height="wrap_content"
+                    android:text="找回密码"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

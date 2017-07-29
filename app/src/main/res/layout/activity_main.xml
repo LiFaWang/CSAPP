@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout   xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <FrameLayout
+      android:id="@+id/mainFrameLayout"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+  </FrameLayout>
+
+    <include layout="@layout/underline_black"></include>
+    <RadioGroup
+        android:id="@+id/mainRG"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <RadioButton
+            android:id="@+id/mainHome"
+            style="@style/HomeRG"
+            android:checked="true"
+            android:drawableTop="@drawable/home_select"
+            android:text="设备分布"/>
+        <RadioButton
+            android:id="@+id/mainReal"
+            style="@style/HomeRG"
+            android:drawableTop="@drawable/real_select"
+            android:text="实时监控"/>
+        <RadioButton
+            android:id="@+id/mainHistory"
+            style="@style/HomeRG"
+            android:drawableTop="@drawable/history_select"
+            android:text="历史数据"/>
+        <RadioButton
+            android:id="@+id/mainMy"
+            android:drawableTop="@drawable/mine_select"
+            style="@style/HomeRG"
+            android:text="我的"/>
+    </RadioGroup>
+</LinearLayout>
+</layout>
